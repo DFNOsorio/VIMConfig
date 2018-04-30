@@ -12,6 +12,7 @@ set smartcase
 set hlsearch
 set incsearch 
 set autowrite
+set t_Co=256
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
@@ -41,6 +42,7 @@ let NERDTreeMapOpenInTab='<BS>'
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 let g:auto_save = 1 
+let g:auto_save_in_insert_mode = 0
 let g:auto_save_events = ["InsertLeave"]
 
 autocmd VimLeave * NERDTreeClose
