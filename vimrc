@@ -12,7 +12,6 @@ set smartcase
 set hlsearch
 set incsearch 
 set autowrite
-set t_Co=256
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
@@ -45,4 +44,6 @@ let g:auto_save = 1
 let g:auto_save_events = ["InsertLeave"]
 
 autocmd VimLeave * NERDTreeClose
+
+nmap <F8> :TagbarToggle<CR>
 
