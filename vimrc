@@ -1,6 +1,4 @@
 execute pathogen#infect()
-call pathogen#helptags()
-set tabstop=4
 set shiftwidth=4
 set number
 syntax on
