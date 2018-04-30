@@ -11,6 +11,6 @@ cd ~/.vim/bundle/tagbar
 git submodule add https://github.com/universal-ctags/ctags.git ctags
 cd ctags
 ./autogen.sh
-./configure --prefix=/where/you/want # defaults to /usr/local
+./configure # defaults to /usr/local
 make
 make install # may require extra privileges depending on where to install
