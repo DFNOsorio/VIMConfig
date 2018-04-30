@@ -45,3 +45,5 @@ let g:auto_save_events = ["InsertLeave"]
 
 autocmd VimLeave * NERDTreeClose
 
+nmap <F8> :TagbarToggle<CR>
+
